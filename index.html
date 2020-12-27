@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="ja">
+<html>
+<head>
+<meta charset="UTF-8">
+<!--↓これviewportの指定が無いとレスポンシブにならないです-->
+<meta content="initial-scale=1, minimum-scale=1, user-scalable=no, width=device-width" name="viewport">
+<title>Fon-tage</title>
+	
+<!--CSS-->
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="css/drawer.css" rel="stylesheet" type="text/css">
+<link href="css/common.css" rel="stylesheet" type="text/css">
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/earlyaccess/notosansjp.css">
+<link href="css/common_add.css" rel="stylesheet" type="text/css">
+
+	
+
+	
+<!-- js -->	
+<script src="js/smooth-scroll.polyfills.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+<script src="js/drawer.js"></script>
+<script src="js/modaltry.js"></script>
+	
+<!--drawer.js-->
+<script>
+$(document).ready(function() {
+	$(".drawer").drawer();
+	$('.drawer-menu li a').on('click', function() {
+		$('.drawer').drawer('close');
+	});
+});
+</script>
+<!-- /drawer.js-->
+
+<!-- CSS -->
+<link href="css/iziModal.min.css" rel="stylesheet">
+<!--<link href="css/qa_modal.css" rel="stylesheet" type="text/css">-->
+<!-- JS --> 
+<!--<script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+
+</head>
+
+<body class="index drawer drawer--right">
+<div class="main1">
+  <header id="scroll">
+    <a href="index.html"><img class="logo-top" src="img/fon-tage_logo01.png" alt="Fon-tage"/></a>
+    <div class="header_inner">
+      <nav class="pc-header-item">
+      <ul class="pc-nav">
+            <li><a href="#section2">メニュー</a></li>
+            <li><a href="#section3">こだわり・想い</a></li>
+            <li><a href="#section4">野菜クイズ</a></li>
+            <li><a href="#section5">アクセス</a></li>
+      </ul>
+      </nav>
+    </div>
+    <!-- SP nav -->
+    <div class="sp-nav">
+      <button type="button" class="drawer-toggle drawer-hamburger">
+      <span class="sr-only">toggle navigation</span>
+      <span class="drawer-hamburger-icon"></span>
+      </button>
+      <nav class="drawer-nav">
+        <ul class="drawer-menu">
+          <li><a class="drawer-menu-item" href="#section2">メニュー</a></li>
+          <li><a class="drawer-menu-item" href="#section3">こだわり・想い</a></li>
+          <li><a class="drawer-menu-item" href="#section4">野菜クイズ</a></li>
+          <li><a class="drawer-menu-item" href="#section5">アクセス</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /SP nav -->
+  </header>	
+</div>
+
+<div class="main2">
+  <div class="hiroarea">
+    <div class="store-name">
+      <img src="img/sub_title.gif" alt="野菜と出汁が選べるポタージュ専門店"/><img src="img/fon-tage_title.gif" alt="Fon-tage"/>
+    </div> <!--アニメーション②-->
+    <div class="fish1">
+      <img src="img/fish.png" alt="魚"/>
+    </div><!--アニメーション①-->
+    <div class="description">
+      <h1 class="hiro-copy-title">染みわたる、うま味。</h1>
+      <p class="hiro-copy-description"><!--ここはlistでは無く、pなどで良いよ-->
+        野菜を皮から葉っぱまで余すことなく使い、<br>
+        お好きな出汁とブレンドして<br>
+        日本風に、イタリアンに、中華風に。<br>
+        おいしさと栄養をぎゅっと<br>
+		凝縮させたスープで小腹を満たして、<br>
+		気持ちをリセット、しましょ？<br>
+      </p>
+    </div> <!--アニメーション③-->
+  </div>
+  
+    <!--これはbodyに対してのpositionで指定したい
+
+  <!--<section id="section1">
+  </section>-->
+
+  <section id="section2">
+    <div class="menu">
+      <div class="menu-title"><img class="menu-title-img" src="img/menu-title.gif" alt="メニュー"/></div>
+	  <div class="reverse1">
+      <p class="menu-description">旬のお野菜とお出汁×２種類、ホットかアイスをお選びください。オプションでパスタやクルトン、春雨などもご用意しております。</p>
+			<div class="board-separate">
+        	<img class="pc_blackboard" src="img/blackboard.png" alt="黒板"/> 
+			<img class="sp_blackboard" src="img/menu_blackboard_sp.png" alt=""/>
+			</div></div>
+		<div class="menu-detail"><a class="menu-detail-other" href="#">メニューをもっと詳しく知る　＞</a></div>
+	  
+	  <div class="footprint1"><img src="img/footprint0001.gif" alt="ニワトリの足跡"/></div>
+    </div>
+  </section>
+
+  <section id="section3">
+  <div class="commitment">
+      <div class="commitment-title"><img class="commitment-title-img" src="img/commitment_title.gif" alt="こだわり・想い"/>
+      <p class="commitment-description">お仕事をしながら、街を歩きながら「ながら飲み」できるようなしょっぱい飲み物をつくりたい、という思いでFon-tageはできました。</p></div>
+      <div class="commitment-item">
+        <div class="btn01"><a href="" class="js-modal-open" data-target="modal01"><p class="commitment-content-title">01.有機野菜をまるごと</p></a></div>
+    <div id="modal01" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+			<a class="js-modal-close close-mark" href=""><i class="fas fa-times"></i></a>
+			<img class="c1" src="img/commitment_modal01.png" alt="野菜の写真"/>
+			<p>国産の安心安全なお野菜100%使用。廃棄を出さずに環境にも配慮しながら、栄養も丸ごと摂れます。
+			</p>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+		  
+        <div class="btn02"><a href="" class="js-modal-open" data-target="modal02"><p class="commitment-content-title-kai">02.野菜×世界の出汁×温度＝自分だけのスープ</p></a></div>
+		  <div id="modal02" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+			<a class="js-modal-close close-mark" href=""><i class="fas fa-times"></i></a>
+			<img class="c2" src="img/commitment_modal02.png" alt="鍋からポタージュを注ぐ女性の手元"/>
+			<p>お野菜は季節ごとに変わり、その度に新しい味に出会えます。あなただけの、最高の一品を。
+			</p>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+<div class="btn03"><a href="" class="js-modal-open" data-target="modal03"><p class="commitment-content-title">03.一杯で小腹を満たす</p></a></div>
+		  <div id="modal03" class="modal js-modal">
+        <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+			<a class="js-modal-close close-mark" href=""><i class="fas fa-times"></i></a>
+			<img class="c3" src="img/commitment_modal03.png" alt="ポタージュと仕事をする女性の手元"/>
+			<p>ちょっとした休憩のお供に。ドリンク感覚で楽しむ健康的でおいしい、新しいおやつの提案です。
+			</p>
+        </div><!--modal__inner-->
+    </div><!--modal-->
+		<img class="footprint2" src="img/footprint0002.gif" alt="ニワトリの足跡"/>
+      </div>
+    </div>
+  </section>
+
+  <section id="section4">
+    <div class="vege-qa">
+      <div class="vege-qa-title"><img class="vege-qa-title-image" src="img/q_a_title.png" alt="野菜クイズ"/><p class="vege-qa-description">クイズに答えて、お店でお得にスープを飲みませんか？３文字集めて、できあがった言葉を会計時にお伝えください。５％割引きでポタージュをご提供します。</p></div>
+	  <div class="footprint3"><img src="img/footprint0003.gif" alt="ニワトリの足跡"/></div>
+		
+        <div class="vg-qa-item">
+          <div class="chicken1"><img src="img/chicken01.png" alt="歩くニワトリ"/></div>
+			
+			<!--ここから箱です-->
+			<div id="modal-iframe1" data-izimodal-group="group1">
+  <div class="close">
+    <a class="qa_close" data-izimodal-close="">×</a>
+  </div>
+</div>
+          <button class="open-iframe1 button"><img src="img/q1_box.png" alt="Q1箱"/></button>
+
+
+          <div class="chicken2"><img src="img/chicken02.png" alt="上を向くニワトリ"/></div>
+			
+          <button class="open-iframe2 button_re"><img class="qa-box" src="img/q2_box.png" alt="Q2箱"/></button>
+<div id="modal-iframe2" data-izimodal-group="group2">
+  <div class="close">
+    <a class="qa_close" data-izimodal-close="">×</a>
+  </div>
+</div>
+			<div class="egg1"><img src="img/egg01.png" alt="卵"/></div>
+			<div class="egg2"><img src="img/egg02.png" alt="卵"/></div>
+			<div class="egg3"><img src="img/egg03.png" alt="卵"/></div>
+			
+          <button class="open-iframe3 button"><img src="img/q3_box.png" alt="Q3箱"/></button>
+<div id="modal-iframe3" data-izimodal-group="group3">
+  <div class="close">
+    <a class="qa_close" data-izimodal-close="">×</a>
+  </div>
+</div>
+			
+          <div class="chicken4"><img src="img/chicken_fly.png" alt="右向きで羽ばたくニワトリ"/></div>
+        </div>
+      </div>
+  </section>
+
+  <section id="section5">
+    <div class="access">
+      <div class="access-title"><img src="img/access_title.gif" alt="アクセス"/></div>
+      <div class="access-item">
+        <ul class="address">
+          <li>〒100-0005</li>
+          <li>東京都千代田区丸の内2-6-1</li>
+          <li><i class="fas fa-phone"></i>   03-XXXX-XXXX</li>
+          <li><i class="fas fa-shoe-prints"></i>    東京駅より徒歩5分</li>
+          <li><i class="far fa-clock"></i>   11:00-19:00　日曜定休</li>
+        </ul><!--ここ店舗イメージでもいいかも-->
+      <button class="map"><a href="https://www.google.com/maps/place/%E3%80%92100-0005+%E6%9D%B1%E4%BA%AC%E9%83%BD%E5%8D%83%E4%BB%A3%E7%94%B0%E5%8C%BA%E4%B8%B8%E3%81%AE%E5%86%85%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%96%E2%88%92%EF%BC%91+%E4%B8%B8%E3%81%AE%E5%86%85%E3%83%96%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9%E3%82%AF%E3%82%A8%E3%82%A2/@35.6789186,139.7631181,15z/data=!4m2!3m1!1s0x60188bfa733b57d9:0x859305c9aa9802ae" rel="nofollow" class="to-googlemap">Google Mapsへとぶ</a><a class="map-image"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.936306780318!2d139.76034381525878!3d35.6785702801949!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfa733b57d9%3A0x859305c9aa9802ae!2z5Li444Gu5YaF44OW44Oq44OD44Kv44K544Kv44Ko44Ki!5e0!3m2!1sja!2sjp!4v1601972674307!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></a></button> 
+      <div class="chicken5"><img src="img/chicken_fly02.png" alt="左向きで羽ばたくニワトリ"/></div>
+      <div class="footprint4"><img src="img/footprint0004.gif" alt="ニワトリの足跡"/></div>
+	  </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content1">
+      <img class="logo-bottom" src="img/fon-tage_logo.gif" alt="Fon-tageロゴ"/>
+      <p class="copyright">copyright©︎jurihasegawa</p>
+    </div>
+    <div class="footer-content2">
+      <nav class="pc-footer-item">
+          <ul class="pc-nav-footer">
+                <li><a href="#section2">メニュー</a></li>
+                <li><a href="#section3">こだわり・想い</a></li>
+                <li><a href="#section4">野菜クイズ</a></li>
+              <li><a href="#section5">アクセス</a></li>
+            </ul>
+        </nav>
+    </div>
+  </footer>
+ 
+</div><!--/main2-->
+
+<script>
+ //default
+$(document).on('click', '.open-default', function(event) {
+  event.preventDefault();
+  $('#modal-default').iziModal('open');
+});
+$('#modal-default').iziModal();
+
+//iframe
+$(document).on('click', '.open-iframe1', function(event) {
+  event.preventDefault();
+  $('#modal-iframe1').iziModal('open', this);
+});
+$('#modal-iframe1').iziModal({
+  //width:400, //横幅
+  iframe: true, //iframeを利用
+  iframeWidth:546,
+  iframeHeight: 546, //iframeの高さ
+  iframeURL: 'q1_top.html' //iframe内に表示するurl
+});
+    
+$(document).on('click', '.open-iframe2', function(event) {
+  event.preventDefault();
+  $('#modal-iframe2').iziModal('open', this);
+});
+$('#modal-iframe2').iziModal({
+  //width:400, //横幅
+  iframe: true, //iframeを利用
+  iframeWidth:546,
+  iframeHeight: 546, //iframeの高さ
+  iframeURL: 'q2_top.html' //iframe内に表示するurl
+});
+    
+$(document).on('click', '.open-iframe3', function(event) {
+  event.preventDefault();
+  $('#modal-iframe3').iziModal('open', this);
+});
+$('#modal-iframe3').iziModal({
+  //width:400, //横幅
+  iframe: true, //iframeを利用
+  iframeWidth:546,
+  iframeHeight: 546, //iframeの高さ
+  iframeURL: 'q3_top.html' //iframe内に表示するurl
+});
+ </script>
+</body>
+</html>
+</html>
